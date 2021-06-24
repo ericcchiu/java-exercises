@@ -30,7 +30,7 @@ public class ReverseStringTest {
     @Test
     public void testCodePoint() {
         String input = "\uD835\uDD38BC";
-        String expected = "CB\uDD38\uD835";
+        String expected = "CB\uD835\uDD38";
 
         assertEquals(expected, reverseString.reverse(input));
     }
@@ -46,7 +46,7 @@ public class ReverseStringTest {
     @Test
     public void testStringWithPunctuations() {
         String input = "Hello!";
-        String expected = "olleH";
+        String expected = "!olleH";
 
         assertEquals(expected, reverseString.reverse(input));
     }
