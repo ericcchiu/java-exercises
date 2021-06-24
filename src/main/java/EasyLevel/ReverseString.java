@@ -1,7 +1,8 @@
-package twofer;
+package EasyLevel;
 
-public class Twofer {
-    public String twofer(String name) {
+public class ReverseString {
+
+    public String reverse(String inputString) {
         throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
 }

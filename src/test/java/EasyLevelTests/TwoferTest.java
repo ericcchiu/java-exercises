@@ -1,6 +1,8 @@
+package EasyLevelTests;
+
 import org.junit.Before;
 import org.junit.Test;
-import twofer.Twofer;
+import EasyLevel.Twofer;
 
 import static org.junit.Assert.assertEquals;
 
