@@ -1,4 +1,4 @@
-package hello;
+package EasyLevel;
 
 public class Greeter {
     public String sayHello() {

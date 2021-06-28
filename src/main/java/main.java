@@ -1,5 +1,4 @@
-import hello.Greeter;
-import reverseString.ReverseString;
+import EasyLevel.ReverseString;
 
 public class main {
     public static void runner(String[] args) {

@@ -1,6 +1,8 @@
+package EasyLevelTests;
+
 import org.junit.Before;
 import org.junit.Test;
-import reverseString.ReverseString;
+import EasyLevel.ReverseString;
 
 import static org.junit.Assert.assertEquals;
 

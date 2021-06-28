@@ -1,4 +1,4 @@
-package reverseString;
+package EasyLevel;
 
 public class ReverseString {
 

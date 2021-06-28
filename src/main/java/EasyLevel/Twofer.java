@@ -1,4 +1,4 @@
-package twofer;
+package EasyLevel;
 
 public class Twofer {
     public String twofer(String name) {
