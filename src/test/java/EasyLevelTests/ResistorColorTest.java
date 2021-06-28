@@ -5,6 +5,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Ignore;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class ResistorColorTest {
@@ -18,7 +22,7 @@ public class ResistorColorTest {
 
     @Test
     public void testBlackColorCode() {
-        String input = "black";
+        String input = "Black";
         int expected = 0;
 
         assertEquals(expected, resistorColor.colorCode(input));
@@ -27,7 +31,7 @@ public class ResistorColorTest {
     @Ignore("Remove to run test")
     @Test
     public void testWhiteColorCode() {
-        String input = "white";
+        String input = "White";
         int expected = 9;
 
         assertEquals(expected, resistorColor.colorCode(input));
@@ -36,7 +40,7 @@ public class ResistorColorTest {
     @Ignore("Remove to run test")
     @Test
     public void testOrangeColorCode() {
-        String input = "orange";
+        String input = "Orange";
         int expected = 3;
 
         assertEquals(expected, resistorColor.colorCode(input));
@@ -45,7 +49,7 @@ public class ResistorColorTest {
     @Ignore("Remove to run test")
     @Test
     public void testColors() {
-        String[] expected = {"black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"};
+        ArrayList<String> expected = new ArrayList<String>(Arrays.asList("Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Grey", "White"));
 
         assertEquals(expected, resistorColor.colors());
     }
