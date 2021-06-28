@@ -8,7 +8,6 @@ import org.junit.Ignore;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class ResistorColorTest {
