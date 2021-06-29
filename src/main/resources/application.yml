@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: java-exercise
+  profiles: local
+
+
+server:
+  port: 9000
+  servlet:
+    context-path: /java-exercises
+  tomcat:
+    max-http-header-size: 12288
