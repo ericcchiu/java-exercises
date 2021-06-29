@@ -1,11 +1,21 @@
 package EasyLevel;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ResistorColor {
     public int colorCode(String color) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        ArrayList<String> colorCodeList = new ArrayList<String>(Arrays.asList("Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Grey", "White"));
+        for(int i = 0; i < colorCodeList.size(); i++) {
+            if(color == colorCodeList.get(i)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
-    public String[] colors() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    public ArrayList<String> colors() {
+        ArrayList<String> colors = new ArrayList<String>(Arrays.asList("Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Grey", "White"));
+        return colors;
     }
 }
