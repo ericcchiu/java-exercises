@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class ResistorColor {
     public int colorCode(String color) {
         ArrayList<String> colorCodeList = new ArrayList<String>(Arrays.asList("Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Grey", "White"));
-        for(int i = 0; i < colorCodeList.size(); i++) {
-            if(color == colorCodeList.get(i)) {
+        for (int i = 0; i < colorCodeList.size(); i++) {
+            if ( color == colorCodeList.get(i) ) {
                 return i;
             }
         }
