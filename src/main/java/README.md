@@ -93,18 +93,24 @@ Mnemonics map the colors to the numbers, that, when stored as an array, happen t
 
 More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
 
-## Darts
+### Resistor Color Duo
 
-Write a function that returns the earned points in a single toss of a Darts game.
+If you want to build something using a Raspberry Pi, you'll probably use resistors. For this exercise, you need to know two things about them:
 
-Darts is a game where players throw darts to a target.
+Each resistor has a resistance value.
+Resistors are small - so small in fact that if you printed the resistance value on them, it would be hard to read. To get around this problem, manufacturers print color-coded bands onto the resistors to denote their resistance values. Each band has a position and a numeric value. For example, if they printed a brown band (value 1) followed by a green band (value 5), it would translate to the number 15.
+In this exercise you are going to create a helpful program so that you don't have to remember the values of the bands. The program will take color names as input and output a two digit number, even if the input is more than two colors!
 
-In our particular instance of the game, the target rewards with 4 different amounts of points, depending on where the dart lands:
+The band colors are encoded as follows:
 
-- If the dart lands outside the target, player earns no points (0 points).
-- If the dart lands in the outer circle of the target, player earns 1 point.
-- If the dart lands in the middle circle of the target, player earns 5 points.
-- If the dart lands in the inner circle of the target, player earns 10 points.
-- The outer circle has a radius of 10 units (This is equivalent to the total radius for the entire target), the middle circle a radius of 5 units, and the inner circle a radius of 1. Of course, they are all centered to the same point (That is, the circles are concentric) defined by the coordinates (0, 0).
-
-Write a function that given a point in the target (defined by its real cartesian coordinates x and y), returns the correct amount earned by a dart landing in that point.
+Black: 0
+Brown: 1
+Red: 2
+Orange: 3
+Yellow: 4
+Green: 5
+Blue: 6
+Violet: 7
+Grey: 8
+White: 9
+From the example above: brown-green should return 15 brown-green-violet should return 15 too, ignoring the third color.
